@@ -32,3 +32,60 @@ hr {
   height: 1px;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0));
 }
+ol.ProgressBar {
+   margin: 0;
+   padding: 0;
+   list-style-type none;
+}
+
+ol.ProgressBar li {
+   display: inline-block;
+   text-align: center;
+   line-height: 1.5em;
+}
+
+ol.ProgressBar[data-ProgressBar-steps="2"] li { width: 49%; }
+ol.ProgressBar[data-ProgressBar-steps="3"] li { width: 33%; }
+ol.ProgressBar[data-ProgressBar-steps="4"] li { width: 24%; }
+ol.ProgressBar[data-ProgressBar-steps="5"] li { width: 19%; }
+ol.ProgressBar[data-ProgressBar-steps="6"] li { width: 16%; }
+ol.ProgressBar[data-ProgressBar-steps="7"] li { width: 14%; }
+ol.ProgressBar[data-ProgressBar-steps="8"] li { width: 12%; }
+ol.ProgressBar[data-ProgressBar-steps="9"] li { width: 11%; }
+
+ol.ProgressBar li.ProgressBar-done {
+   color: black;
+   border-bottom: 4px solid #326fcd;
+}
+ol.ProgressBar li.ProgressBar-todo {
+   color: silver;
+   border-bottom: 4px solid silver;
+}
+
+ol.ProgressBar li:after {
+   content: "\00a0\00a0";
+}
+ol.ProgressBar li:before {
+   position: relative;
+   bottom: -1.2em;
+   float: left;
+   left: 50%;
+   line-height: 1em;
+}
+ol.ProgressBar li.ProgressBar-done:before {
+   content: "\2713";
+   color: white;
+   background-color: #326fcd;
+   height: 2.2em;
+   width: 2.2em;
+   line-height: 2.2em;
+   border: none;
+   border-radius: 2.2em;
+}
+ol.ProgressBar li.ProgressBar-todo:before {
+   content: "\039F";
+   color: silver;
+   background-color: white;
+   font-size: 2.25em;
+   bottom: -0.6em;
+}

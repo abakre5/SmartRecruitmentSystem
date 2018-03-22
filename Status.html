@@ -1,308 +1,248 @@
 
-<!DOCTYPE html>
-<html lang="en">
+  <!DOCTYPE html>
+  <html lang="en">
 
-<head>
-  <title>SIH 2018:Job Status</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="file:///home/abhishek/SIH2018/style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/general.css">
-  <link rel="stylesheet" href="css/status.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <script src="js/toolpit.js"></script>
-</head>
+  <head>
+    <title>SIH 2018:Job Status</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="file:///home/abhishek/SIH2018/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/status.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/toolpit.js"></script>
+  </head>
 
-<body>
+  <body>
 
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-        <a class="navbar-brand" href="#">SIH2018</a>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+          <a class="navbar-brand" href="#">SIH2018</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ApplicationDetails.html">Application Details</a></li>
+            <li class="active"><a href="#">Status</a></li>
+            <li><a href="JobOpenings.html">Job Openings</a></li>
+            <li><a href="#">Contact US</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user" ></span> Abhishek <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Logout</a></li>
+              </ul></li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="ApplicationDetails.html">Application Details</a></li>
-          <li class="active"><a href="#">Status</a></li>
-          <li><a href="JobOpenings.html">Job Openings</a></li>
-          <li><a href="#">Contact US</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user" ></span> Abhishek <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">Logout</a></li>
-            </ul></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    </nav>
 
-  <div class="container">
-    <h2>Applied Job Status</h2>
-    <div class="panel-group">
+    <div class="container">
+      <h2>Applied Job Status</h2>
+      <div class="panel-group">
 
-      <div class="panel panel-success">
-        <div class="panel-heading">Applied Jobs</div>
-        <div class="panel-body">
-          <table class="table table-striped">
-            <thead>
-              <tr>
-                <th>Job Name</th>
-                <th>Date Of Application</th>
-                <th>Status</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td >
-                  <a href="#" data-toggle="collapse" data-target="#Job1" class="ahref">Scientific Assistant-A
-                    <i class="fa fa-angle-double-down" aria-hidden="true"></i>
-                  </a>
-                  <div id="Job1" class="collapse">
-                    <hr/>
-                    Fake Scientist
-                  </div>
-                </td>
-                <td>12/03/2018</td>
-                <td>
-                  <a href="#" data-toggle="collapse" data-target="#status1" class="ahref">Application Under Review
-                    <i class="fa fa-angle-double-down" aria-hidden="true"></i>
-                  </a>
-                  <div id="status1" class="collapse">
-                    <hr/><ol class="ProgressBar" data-ProgressBar-steps="5">
-                      <li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Incomplete"></li><!--
-                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Submitted"></li><!--
-                   --><li class="ProgressBar-todo" data-toggle="tooltip" data-placement="top" title="Application Under Review"></li><!--
-                   --><li class="ProgressBar-todo" data-toggle="tooltip" data-placement="top" title="Application Interview: Scheduled"></li><!--
-                   --><li class="ProgressBar-todo" data-toggle="tooltip" data-placement="top" title="Application Result: N/A"></li>
-                  </ol>
-                  </div>
-                  <br/>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#" data-toggle="collapse" data-target="#Job2" class="ahref">Researcher
-                    <i class="fa fa-angle-double-down" aria-hidden="true"></i>
-                  </a>
-                  <div id="Job2" class="collapse">
-                    <hr/>
-                    Fake Researcher
-                  </div>
+        <div class="panel panel-success">
+          <div class="panel-heading">Applied Jobs</div>
+          <div class="panel-body">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>Job Name</th>
+                  <th>Date Of Application</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td >
+                    <a href="#" data-toggle="collapse" data-target="#Job1" class="ahref">Scientific Assistant-A
+                      <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                    </a>
+                    <div id="Job1" class="collapse">
+                      <hr/>
+                      Fake Scientist
+                    </div>
                   </td>
-                <td>11/03/2018</td>
-                <td>
-                  <a href="#" data-toggle="collapse" data-target="#status2" class="ahref">Application Interview Scheduled
-                    <i class="fa fa-angle-double-down" aria-hidden="true"></i>
-                  </a>
-                  <div id="status2" class="collapse">
-                    <hr/><ol class="ProgressBar" data-ProgressBar-steps="5">
-                      <li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Incomplete"></li><!--
-                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Submitted"></li><!--
-                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Under Review"></li><!--
-                   --><li class="ProgressBar-todo" data-toggle="tooltip" data-placement="top" title="Application Interview: Scheduled"></li><!--
-                   --><li class="ProgressBar-todo" data-toggle="tooltip" data-placement="top" title="Application Result: N/A"></li>
-                  </ol>
-                  </div>
-                  <br/>
+                  <td>12/03/2018</td>
+                  <td>
+                    <a href="#" data-toggle="collapse" data-target="#status1" class="ahref">Application Under Review
+                      <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                    </a>
+                    <div id="status1" class="collapse">
+                      <hr/><ol class="ProgressBar" data-ProgressBar-steps="5">
+                        <li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Incomplete"></li><!--
+                     --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Submitted"></li><!--
+                     --><li class="ProgressBar-todo" data-toggle="tooltip" data-placement="top" title="Application Under Review"></li><!--
+                     --><li class="ProgressBar-todo" data-toggle="tooltip" data-placement="top" title="Application Interview: Scheduled"></li><!--
+                     --><li class="ProgressBar-todo" data-toggle="tooltip" data-placement="top" title="Application Result: N/A"></li>
+                    </ol>
+                    </div>
+                    <br/>
                   </td>
-              </tr>
-              <tr>
-                <td>
-                  <a href="#" data-toggle="collapse" data-target="#Job3" class="ahref">Clerk
-                    <i class="fa fa-angle-double-down" aria-hidden="true"></i>
-                  </a>
-                  <div id="Job3" class="collapse">
-                    <hr/>
-                    Fake Clerk
-                  </div>
-                </td>
-                <td>01/02/2018</td>
-                <td>
-                  <a href="#" data-toggle="collapse" data-target="#status3" class="ahref">Application: Selected
-                    <i class="fa fa-angle-double-down" aria-hidden="true"></i>
-                  </a>
-                  <div id="status3" class="collapse">
-                    <hr/><ol class="ProgressBar" data-ProgressBar-steps="5">
-                      <li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Incomplete"></li><!--
-                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Submitted"></li><!--
-                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Under Review"></li><!--
-                   --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Interview: Scheduled"></li><!--
-                   --><li class="ProgressBar-todo" data-toggle="tooltip" data-placement="top" title="Application Result: N/A"></li>
-                  </ol>
-                  </div>
-                  <br/>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" data-toggle="collapse" data-target="#Job2" class="ahref">Researcher
+                      <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                    </a>
+                    <div id="Job2" class="collapse">
+                      <hr/>
+                      Fake Researcher
+                    </div>
+                    </td>
+                  <td>11/03/2018</td>
+                  <td>
+                    <a href="#" data-toggle="collapse" data-target="#status2" class="ahref">Application Interview Scheduled
+                      <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                    </a>
+                    <div id="status2" class="collapse">
+                      <hr/><ol class="ProgressBar" data-ProgressBar-steps="5">
+                        <li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Incomplete"></li><!--
+                     --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Submitted"></li><!--
+                     --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Under Review"></li><!--
+                     --><li class="ProgressBar-todo" data-toggle="tooltip" data-placement="top" title="Application Interview: Scheduled"></li><!--
+                     --><li class="ProgressBar-todo" data-toggle="tooltip" data-placement="top" title="Application Result: N/A"></li>
+                    </ol>
+                    </div>
+                    <br/>
+                    </td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href="#" data-toggle="collapse" data-target="#Job3" class="ahref">Clerk
+                      <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                    </a>
+                    <div id="Job3" class="collapse">
+                      <hr/>
+                      Fake Clerk
+                    </div>
                   </td>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+                  <td>01/02/2018</td>
+                  <td>
+                    <a href="#" data-toggle="collapse" data-target="#status3" class="ahref">Application: Selected
+                      <i class="fa fa-angle-double-down" aria-hidden="true"></i>
+                    </a>
+                    <div id="status3" class="collapse">
+                      <hr/><ol class="ProgressBar" data-ProgressBar-steps="5">
+                        <li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Incomplete"></li><!--
+                     --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Submitted"></li><!--
+                     --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Under Review"></li><!--
+                     --><li class="ProgressBar-done" data-toggle="tooltip" data-placement="top" title="Application Interview: Scheduled"></li><!--
+                     --><li class="ProgressBar-todo" data-toggle="tooltip" data-placement="top" title="Application Result: N/A"></li>
+                    </ol>
+                    </div>
+                    <br/>
+                    </td>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-      </div>
 
-      <div class="panel panel-success">
-        <div class="panel-heading">No Jobs Applied</div>
-        <div class="panel-body">
-          <h1>Sorry No Jobs Applied</h1>
-            <hr style="margin:30px;"/>
-          <p><a href = "#" class="ahref">Click Here</a> to See current Job Openings</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <style>
-  ol.ProgressBar {
-     margin: 0;
-     padding: 0;
-     list-style-type none;
- }
-
- ol.ProgressBar li {
-     display: inline-block;
-     text-align: center;
-     line-height: 1.5em;
- }
-
- ol.ProgressBar[data-ProgressBar-steps="2"] li { width: 49%; }
- ol.ProgressBar[data-ProgressBar-steps="3"] li { width: 33%; }
- ol.ProgressBar[data-ProgressBar-steps="4"] li { width: 24%; }
- ol.ProgressBar[data-ProgressBar-steps="5"] li { width: 19%; }
- ol.ProgressBar[data-ProgressBar-steps="6"] li { width: 16%; }
- ol.ProgressBar[data-ProgressBar-steps="7"] li { width: 14%; }
- ol.ProgressBar[data-ProgressBar-steps="8"] li { width: 12%; }
- ol.ProgressBar[data-ProgressBar-steps="9"] li { width: 11%; }
-
- ol.ProgressBar li.ProgressBar-done {
-     color: black;
-     border-bottom: 4px solid #326fcd;
- }
- ol.ProgressBar li.ProgressBar-todo {
-     color: silver;
-     border-bottom: 4px solid silver;
- }
-
- ol.ProgressBar li:after {
-     content: "\00a0\00a0";
- }
- ol.ProgressBar li:before {
-     position: relative;
-     bottom: -1.2em;
-     float: left;
-     left: 50%;
-     line-height: 1em;
- }
- ol.ProgressBar li.ProgressBar-done:before {
-     content: "\2713";
-     color: white;
-     background-color: #326fcd;
-     height: 2.2em;
-     width: 2.2em;
-     line-height: 2.2em;
-     border: none;
-     border-radius: 2.2em;
- }
- ol.ProgressBar li.ProgressBar-todo:before {
-     content: "\039F";
-     color: silver;
-     background-color: white;
-     font-size: 2.25em;
-     bottom: -0.6em;
- }
-  </style>
-
-  <footer class="page-footer font-small unique-color-dark pt-0 fixed-bottom">
-    <div class="container mt-5 mb-4 text-md-left">
-      <div class="row mt-3">
-        <br/>
-        <div class="col-md-3 col-lg-4 col-xl-3 mb-4 text-center">
-          <h6 class="text-uppercase font-weight-bold">
-                      <strong>SIH 2018</strong>
-                  </h6>
-          <hr class="hrfooter" />
-          <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-        </div>
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
-          <h6 class="text-uppercase font-weight-bold">
-                      <strong>Products</strong>
-                  </h6>
-          <hr class="hrfooter">
-          <p>
-            <a href="http://www.nielit.gov.in/content/acts-rules">Act and Rules</a>
-          </p>
-          <p>
-            <a href="http://www.nielit.gov.in/content/mou-industry-academic-institutions-universities">MoUs</a>
-          </p>
-          <p>
-            <a href="JobOpenings.html">Opportunities</a>
-          </p>
-          <p>
-            <a href="http://www.nielit.gov.in/node/2361">Grievance</a>
-          </p>
-          <p>
-            <a href="http://www.nielit.gov.in/content/right-information-1">RTI</a>
-          </p>
-        </div>
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
-          <h6 class="text-uppercase font-weight-bold">
-                      <strong>Useful links</strong>
-                  </h6>
-          <hr class="hrfooter">
-          <p>
-            <a href="http://meity.gov.in/">meity.gov.in</a>
-          </p>
-          <p>
-            <a href="https://india.gov.in/">india.gov.in</a>
-          </p>
-          <p>
-            <a href="https://www.mygov.in/">mygov.in</a>
-          </p>
-          <p>
-            <a href="https://mail.gov.in/iwc_static/c11n/allDomain/layout/login_gov2.jsp?lang=en-US&3.0.1.2.0_15121607&svcs=abs,mail,smime,calendar,c11n">mail.mygov.in</a>
-          </p>
-          <p>
-            <a href="http://www.nielit.gov.in/content/downloads-37">Downloads</a>
-          </p>
-        </div>
-        <div class="col-md-4 col-lg-3 col-xl-3">
-          <h6 class="text-uppercase font-weight-bold text-center">
-                      <strong>Contact</strong>
-                  </h6>
-          <hr class="hrfooter" />
-          <p>
-            <i class="fa fa-home mr-3"></i> &nbsp;&nbsp;NIELIT Bhawan, Plot No. 3, PSP Pocket, Sector-8, Dwarka, New Delhi-110077
-          </p>
-          <p>
-            <i class="fa fa-envelope mr-3"></i> &nbsp;&nbsp;contact@nielit.gov.in
-          </p>
-          <p>
-            <i class="fa fa-phone mr-3"></i> &nbsp;&nbsp;+91-11-2436 3330
-          </p>
-          <p>
-            <i class="fa fa-print mr-3"></i> &nbsp;&nbsp;1800116511</p>
+        <div class="panel panel-success">
+          <div class="panel-heading">No Jobs Applied</div>
+          <div class="panel-body">
+            <h1>Sorry No Jobs Applied</h1>
+              <hr style="margin:30px;"/>
+            <p><a href = "#" class="ahref">Click Here</a> to See current Job Openings</p>
+          </div>
         </div>
       </div>
     </div>
-    <hr class="hrfooter" />
-    <div class="footer-copyright py-3 text-center">
-      <i style="color:grey;">© 2018 Copyright:</i> SIH2018
-      </a>
-    </div>
-    <br/>
-  </footer>
 
-</body>
+    <footer class="page-footer font-small unique-color-dark pt-0 fixed-bottom">
+      <div class="container mt-5 mb-4 text-md-left">
+        <div class="row mt-3">
+          <br/>
+          <div class="col-md-3 col-lg-4 col-xl-3 mb-4 text-center">
+            <h6 class="text-uppercase font-weight-bold">
+                        <strong>SIH 2018</strong>
+                    </h6>
+            <hr class="hrfooter" />
+            <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
+            <h6 class="text-uppercase font-weight-bold">
+                        <strong>Products</strong>
+                    </h6>
+            <hr class="hrfooter">
+            <p>
+              <a href="http://www.nielit.gov.in/content/acts-rules">Act and Rules</a>
+            </p>
+            <p>
+              <a href="http://www.nielit.gov.in/content/mou-industry-academic-institutions-universities">MoUs</a>
+            </p>
+            <p>
+              <a href="JobOpenings.html">Opportunities</a>
+            </p>
+            <p>
+              <a href="http://www.nielit.gov.in/node/2361">Grievance</a>
+            </p>
+            <p>
+              <a href="http://www.nielit.gov.in/content/right-information-1">RTI</a>
+            </p>
+          </div>
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-center">
+            <h6 class="text-uppercase font-weight-bold">
+                        <strong>Useful links</strong>
+                    </h6>
+            <hr class="hrfooter">
+            <p>
+              <a href="http://meity.gov.in/">meity.gov.in</a>
+            </p>
+            <p>
+              <a href="https://india.gov.in/">india.gov.in</a>
+            </p>
+            <p>
+              <a href="https://www.mygov.in/">mygov.in</a>
+            </p>
+            <p>
+              <a href="https://mail.gov.in/iwc_static/c11n/allDomain/layout/login_gov2.jsp?lang=en-US&3.0.1.2.0_15121607&svcs=abs,mail,smime,calendar,c11n">mail.mygov.in</a>
+            </p>
+            <p>
+              <a href="http://www.nielit.gov.in/content/downloads-37">Downloads</a>
+            </p>
+          </div>
+          <div class="col-md-4 col-lg-3 col-xl-3">
+            <h6 class="text-uppercase font-weight-bold text-center">
+                        <strong>Contact</strong>
+                    </h6>
+            <hr class="hrfooter" />
+            <p>
+              <i class="fa fa-home mr-3"></i> &nbsp;&nbsp;NIELIT Bhawan, Plot No. 3, PSP Pocket, Sector-8, Dwarka, New Delhi-110077
+            </p>
+            <p>
+              <i class="fa fa-envelope mr-3"></i> &nbsp;&nbsp;contact@nielit.gov.in
+            </p>
+            <p>
+              <i class="fa fa-phone mr-3"></i> &nbsp;&nbsp;+91-11-2436 3330
+            </p>
+            <p>
+              <i class="fa fa-print mr-3"></i> &nbsp;&nbsp;1800116511</p>
+          </div>
+        </div>
+      </div>
+      <hr class="hrfooter" />
+      <div class="footer-copyright py-3 text-center">
+        <i style="color:grey;">© 2018 Copyright:</i> SIH2018
+        </a>
+      </div>
+      <br/>
+    </footer>
 
-</html>
+  </body>
+
+  </html>
