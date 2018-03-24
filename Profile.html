@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/profile.css">
   <script src="js/navbar.js"></script>
 </head>
 
@@ -43,95 +44,78 @@
     </div>
   </nav>
 
-  <div id="Slider" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#Slider" data-slide-to="0" class="active"></li>
-      <li data-target="#Slider" data-slide-to="1"></li>
-      <li data-target="#Slider" data-slide-to="2"></li>
-    </ol>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 ">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4>User Profile</h4></div>
+          <div class="panel-body">
 
-    <div class="carousel-inner">
+            <div class="box box-info">
 
-      <div class="item active">
-        <img src="img/slider1.jpg" alt="Slider1" style="width:100%;">
-      </div>
+              <div class="box-body">
+                <div class="col-sm-6">
+                  <div align="center"> <img alt="User Pic" src="img/Abhi.jpg" id="profile-image1" class="img-circle img-responsive">
+                    <input id="profile-image-upload" class="hidden" type="file">
+                  </div>
+                  <br>
+                </div>
+                <div class="col-sm-6">
+                  <h4>Abhishek Bakare</h4></span>
+                  <span><p>Aspirant</p></span>
+                  <br>
+                  <br>
+                  <a href="ApplicationDetails.html"> Edit profile</a>
+                </div>
+                <br>
+                <div class="clearfix"></div>
+                <br>
+                <hr style="margin:5px 0 5px 0;">
+                <br>
 
-      <div class="item">
-        <img src="img/slider2.jpg" alt="Slider2" style="width:100%;">
-      </div>
+                <div class="col-sm-5 col-xs-6 tital ">First Name:</div>
+                <div class="col-sm-7 col-xs-6 ">Abhishek</div>
+                <div class="clearfix"></div>
+                <div class="bot-border"></div>
 
-      <div class="item">
-        <img src="img/slider3.jpg" alt="Slider3" style="width:100%;">
-      </div>
+                <div class="col-sm-5 col-xs-6 tital ">Middle Name:</div>
+                <div class="col-sm-7">Jayaprakash</div>
+                <div class="clearfix"></div>
+                <div class="bot-border"></div>
 
-    </div>
+                <div class="col-sm-5 col-xs-6 tital ">Last Name:</div>
+                <div class="col-sm-7">Bakare</div>
+                <div class="clearfix"></div>
+                <div class="bot-border"></div>
 
-    <a class="left carousel-control" href="#Slider" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#Slider" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+                <div class="col-sm-5 col-xs-6 tital ">Permanent Address:</div>
+                <div class="col-sm-7">Pune</div>
 
-  <div class="modal fade" id="SignUp" role="dialog" style="margin-top:15%">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4>Signup <b>SIH2018</b> Account </h4>
-        </div>
-        <div class="modal-body">
-          <form role="form" method="POST" enctype="multipart/form-data" action="">
-            <div class="form-group">
-              <input type="email" class="form-control" name="Email" placeholder="Email" required>
+                <div class="clearfix"></div>
+                <div class="bot-border"></div>
+
+                <div class="col-sm-5 col-xs-6 tital ">Country:</div>
+                <div class="col-sm-7">India</div>
+
+                <div class="clearfix"></div>
+                <div class="bot-border"></div>
+
+                <div class="col-sm-5 col-xs-6 tital ">State:</div>
+                <div class="col-sm-7">Maharashta</div>
+                <div class="clearfix"></div>
+                <div class="bot-border"></div>
+                <div class="col-sm-5 col-xs-6 tital ">Gender:</div>
+                <div class="col-sm-7">Male</div>
+                <div class="clearfix"></div>
+                <div class="bot-border"></div>
+              </div>
             </div>
-            <div class="form-group">
-              <input type="password" class="form-control" id="Password" name="Password"  placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control" id="Confirm_Password" name="Confirm_Password" placeholder="Confirm Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
-                required><span id="message"></span>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="Mobile" maxlength="10" pattern="[7-9]{1}[0-9]{9}" title="Enter Valid Mobile No starting with 7,8 or 9" placeholder="Mobile No" required>
-            </div>
-            <hr/>
-            <button type="submit" class="btn btn-default" name="Submit_SignUp">Sign Up</button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-
-  <div class="modal fade" id="SignIn" role="dialog" style="margin-top:17%">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4>Login To <b>SIH2018</b> Account </h4>
-        </div>
-        <div class="modal-body">
-          <form role="form" method="POST" enctype="multipart/form-data" action="/The_Solution/index.php">
-            <div class="form-group">
-              <input type="email" class="form-control" name="Email" placeholder="Email" required>
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control" name="Password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
-            </div>
-            <hr/>
-            <button type="submit" class="btn btn-default" name="Submit_SignIn">Login</button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
-
-  <br/><br/><br/><br/><br/>
 
   <footer class="page-footer font-small unique-color-dark pt-0 fixed-bottom">
     <div class="container mt-5 mb-4 text-md-left">
@@ -214,15 +198,5 @@
   </footer>
 
 </body>
-
-<script>
-$('#Password, #Confirm_Password').on('keyup', function () {
-    if ($('#Password').val() == $('#Confirm_Password').val()) {
-        $('#message').html('Matching').css('color', 'green');
-    } else
-        $('#message').html('Not Matching').css('color', 'red');
-});
-
-</script>
 
 </html>
