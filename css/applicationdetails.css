@@ -353,7 +353,7 @@ hr {
 
 div.bhoechie-tab-container {
   margin: 5% 12%;
-  height: 600px;
+  height: 680px;
   width: 800px;
 }
 
@@ -379,4 +379,13 @@ div.bhoechie-tab-menu div.list-group>a {
 .ahref {
   font-size: 17px;
   color: #fff;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
 }

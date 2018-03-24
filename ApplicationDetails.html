@@ -115,8 +115,16 @@
                   <label><input type="radio" name="Gender" value="Male" required> Male&nbsp;&nbsp;</label>
                   <label><input type="radio" name="Gender" value="Female" required> Female&nbsp;&nbsp;</label>
                   <label><input type="radio" name="Gender" value="Others" required> Others</label>
+                </div><br/><br/>
+
+                <div class="form-group">
+                  <label>Profile Pic: &ensp;&ensp;&ensp;</label>
+                  <label for="file-upload" class="custom-file-upload">
+                    <i class="fa fa-cloud-upload"></i> Upload Image
+                  </label>
+                  <input id="file-upload" type="file"/>
+                  <img id="blah" src="img/nopreview.png" style="height:80px;width:80px;"/>
                 </div>
-                <br/>
                 <hr/>
                 <button type="submit" class="btn btn-default" name="SubmitDeatils" style="background-color: #073F54;color:#fff;margin-left: 200px; width: 150px">Submit</button>
                 <br/><br/>
@@ -301,5 +309,22 @@
   </footer>
 
 </body>
+<script>
+function readURL(input) {
 
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      $('#blah').attr('src', e.target.result);
+    }
+
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+$("#file-upload").change(function() {
+  readURL(this);
+});
+</script>
 </html>
